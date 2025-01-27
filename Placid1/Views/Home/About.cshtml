@@ -1,0 +1,263 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+ 
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+@{
+    ViewData["Title"] = "About Page";
+    Layout = "~/views/shared/_layout.cshtml";
+}
+
+ 
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col  p-3 align-content-center" style="background-color: aqua;">
+            <img src="~/Images/Lake_Placid_Trans.png" class="img-fluid d-block align-content-center " alt="Lake Placid Banner" border="0"
+                 style="width:100%;">
+            <h2 align="center" style="margin:1px 1px; padding:0px 0px;">
+                55+ Resident Owned Community
+            </h2>
+        </div>
+
+        @*
+        <div class="rows p-3 mb-2 bg-info text-white">
+            <h2 align="center" style="margin:1px 1px; padding:0px 0px;">
+                55+ Resident Owned Community
+            </h2>
+        </div>
+        *@
+    </div>
+    <hr />
+    <div class="row">
+        @*  <div class="col-xs-2 w-25 p-3" style="background-color: green;">
+        *@
+        <div class="col rounded-2" style="background-color:indianred;  width:100%; max-width: 180px; min-width: 50px;">
+            <div class="rows p-3 mb-2 bg-info mx-auto center text-white">
+                <h2 align="center" style="margin:1px 1px; padding:0px 0px;">
+                    55+ Resident Owned
+                </h2>
+            </div>
+
+            <hr>
+
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:5px;">
+                <a href="@Url.Action("Index", "home")" class="menubar">Home</a>
+            </p>
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:5px;">
+                @*<a href="About-Us.html" class="menubar">About</a>*@
+                <a href="@Url.Action("About", "home")" class="menubar">About</a>
+            </p>
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:4px;">
+                <a href="@Url.Action("Location", "home")" class="menubar">Location</a>
+            </p>
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:5px;">
+                <a href="@Url.Action("ParkPlan", "home")" class="menubar">ParkPlan</a>
+            </p>
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:5px;">
+                <a href="@Url.Action("Homes", "home")" class="menubar">Sale</a>
+            </p>
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:5px;">
+                <a href="@Url.Action("Calender", "home")" class="menubar">Calender</a>
+            </p>
+            <p>
+                <img src="~/Images/Bullet.png" alt="Bullet" border="0" height="9" width="0" style="padding-right:5px;">
+                <a href="@Url.Action("Rules", "home")" class="menubar">Rules</a>
+            </p>
+            <hr>
+
+            <p>
+                <strong style="font-size:15pt">Lake Placid MHP</strong>
+            </p>
+            <p style="font-size:15pt">
+
+                980 7th St. NW
+
+                Largo, FL 33770
+            </p>
+            <p style="font-size:15pt">
+                <a class="menubar" style="font-size:18px;" href="mailto:info@lakeplacidpark.com">Email</a>
+                <script type="text/javascript" src="http://voap.weather.com/weather/oap/USFL0271?template=TRVLV&par=3000000007&unit=0&key=twciweatherwidget"></script>
+            </p>
+            <br>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Adm</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+
+                    <li><a class="dropdown-item" href="#">Sign In</a></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <li><a class="dropdown-item" href="#">Chat</a></li>
+                    <li><a class="dropdown-item" href="#">Reports</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col w-75" style="background-color: aqua;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner mx-auto">
+                    <div class="carousel-item active mx-auto">
+                        <img src="~/Images/Slideshow/1_b.jpg" class="d-block img-h" style="width:100%;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/Slideshow/6_b.jpg" class="d-block img-h w-150 mx-auto" style="width:100%;" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="~/Images/Slideshow/3_b.jpg" class="d-block img-h w-150 mx-auto" style="width:100%;" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <br />
+
+                <hr />
+
+                <div style="padding:0px 10px;">
+                    <!--Sub Header-->
+                    <h2 align="center" style="margin:5px 0px; padding:0px 0px;">
+                        About Us
+
+                    </h2>
+                    <p align="left">
+                        Lake Placid Park is a beautiful quiet friendly 55+ resident owned community and we are located, in Largo, central Pinellas County, Florida.  Our 99 unit mobile home retirement community surrounds a 3-acre spring-fed lake, excellent for fishing and watching our feathered friends.
+                    </p>
+                    <p align="left">
+                        The Board of Directors uses professional management and maintenance companies to provide a safe, well run and affordable place to live.  Lake Placid Park is a member of the ROC Forum (Resident Owned Community) and CAI (Community Association Institute).
+                    </p>
+                    <p align="left">
+                        Our residents enjoy:
+                        <ul>
+                            <li>Beautiful clubhouse with a lending library, bingo, billiards table, live music, resident artwork and Wi-Fi. </li>
+                            <li>Activities including, shuffleboard and bocce tournaments, weekly coffee hour, exercise program, Saturday brunch, game nights, monthly dinners, picnics, lunch outings, and weekly Bible study.</li>
+                        </ul>
+                    </p>
+
+                    <hr>
+                    <hr class="double">
+
+
+                    <p>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col"> </th>
+                                    <th scope="col"></th>
+                                    <th scope="col"> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Gulf of Mexico beaches</td>
+                                    <td> </td>
+                                    <td>Airports (Tampa, St Pete/ Clearwater International)</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Largo City parks</td>
+                                    <td> </td>
+                                    <td>Baseball Spring Training</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Pinellas County parks</td>
+                                    <td></td>
+                                    <td>Pinellas Bike Trail (34 miles long)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <p align="left">
+                        Our 55+ resident owned community is just minutes away from: (these need to be anchors)
+                        <ul>
+                            <li>Gulf of Mexico beaches\t\tAirports (Tampa, St Pete/ Clearwater International)</li>
+                            <li>A number of Largo City and Pinellas County parks</li>
+                            <li>Pinellas Bike Trail (34 miles long)</li>
+                            <li>Public and private golf courses</li>
+                            <li>Churches, banks, restaurants</li>
+                            <li>shopping malls, major hospitals</li>
+                            <li>clinics</li>
+                            <li>Bus lines</li>
+                            <li>Largo Cultural Center</li>
+                            <li>Largo Library</li>
+                            <li>Largo Community Center</li>
+                            <li>Highland Recreation Center</li>
+                            <li>Southwest Recreation Center</li>
+                            <li>YMCA</li>
+                            <li>Harvest Market</li>
+                            <li>Bowling Alley</li>
+                            <li>Movie theaters</li>
+                        </ul>
+                    </p>
+                    <p align="right">
+                        Easily accessible:
+                        <ul>
+                            <li>Airports (Tampa, St Pete/ Clearwater International)</li>
+                            <li>Baseball Spring Training</li>
+                            <li>~ Dunedin Stadium - Toronto Blue Jays</li>
+                            <li>~ George Steinbrenner Field - NY Yankees</li>
+                            <li>~ Brighthouse Stadium - Phillies</li>
+                            <li>Tampa Cruise Terminal</li>
+                            <li>Tampa Theater</li>
+                            <li>Busch  Gardens</li>
+                            <li>Orlando Theme Parks </li>
+                            <li>Seminole Hard Rock Casino </li>
+                            <li>Tampa Downs horse racing </li>
+                            <li>Derby Lanes dog track </li>
+                            <li>Lowery Park Zoo </li>
+                            <li>Ruth Eckerd Hall</li>
+                            <li>Tampa Bay Performing Arts Center</li>
+                        </ul>
+                    </p>
+                    <p align="left">
+                        Lake Placid Park, Inc
+                        <br>
+                        980 7th St. NW
+                        <br>
+                        Largo Florida 33770
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+  
+
+@section Scripts
+{
+}

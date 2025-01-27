@@ -24,7 +24,36 @@ namespace Placid1.Controllers
             return View();
         }
 
+        public IActionResult About()
+        {
+            return View();
+        }
 
+        public IActionResult Location()
+        {
+            return View();
+        }
+
+        public IActionResult ParkPlan()
+        {
+            return View();
+        }
+
+        public IActionResult ForSale()
+        {
+            return View();
+        }
+
+
+        public IActionResult Calender()
+        {
+            return View();
+        }
+
+        public IActionResult Rules()
+        {
+            return View();
+        }
 
 
 
