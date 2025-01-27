@@ -6,8 +6,8 @@ using Placid1.Models;
 /*
  * docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=tvxs721#3TTv" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
  
- dotnet ef migrations add InitialCreate --context BlogContext --output-dir Migrations/SqlServerMigrations
-dotnet ef migrations add InitialCreate --context SqliteBlogContext --output-dir Migrations/SqliteMigrations
+ dotnet ef migrations add InitialCreate --context ApplicationDBContext --output-dir Migrations/ApplicationDBContextMigrations
+dotnet ef migrations add InitialCreate --context SchoolContext --output-dir Migrations/SchoolContextMigrations
  
  
  */
