@@ -1,4 +1,4 @@
-﻿using Placid.Models;
+﻿using Placid1.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Placid1.Data
