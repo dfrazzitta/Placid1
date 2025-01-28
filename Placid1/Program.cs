@@ -36,6 +36,8 @@ namespace Placid1
                 options.UseSqlServer(connectionStringdql));
             var app = builder.Build();
 
+            
+
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {

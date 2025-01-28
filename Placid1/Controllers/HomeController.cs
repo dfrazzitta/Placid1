@@ -1,7 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Placid1.Models;
-
+using System.IO;
+ 
 
 /*
  * docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=tvxs721#3TTv" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2019-latest
@@ -27,6 +28,11 @@ namespace Placid1.Controllers
 
         public IActionResult Index()
         {
+            var pp = _env.WebRootPath + "\\config\\" + "TestFile.txt";
+
+             
+
+            //String template = this.File.ReadAllText(Server.MapPath("~/Templates/") + filename);
             return View();
         }
 
